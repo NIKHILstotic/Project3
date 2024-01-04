@@ -94,11 +94,11 @@ gap: 1vw;
 }
 #hero-shape{
     position: absolute;
-    width: 46vw;
+    width: 40vw;
     height: 36vw;
     
     right: 0;
-    top: 65vh;
+    top: 68vh;
     
 }
 #hero1{
@@ -143,7 +143,7 @@ gap: 1vw;
 }
 @keyframes anime1{
     from{
-        transform: translate(55%,-3%);
+        transform: translate(45%,-3%);
     }
     to{
         transform: translate(0%,10%);
@@ -151,10 +151,10 @@ gap: 1vw;
 }
 @keyframes anime2{
     from{
-        transform: translate(5%,-5%);
+        transform: translate(10%,-10%);
     }
     to{
-        transform: translate(-20%,30%);
+        transform: translate(-40%,40%);
 
     }
 
@@ -164,6 +164,7 @@ gap: 1vw;
     width: 100%;
   background-color: #efeae3;
   padding: 8vw 0;
+  position: relative;
 }
 #moving-text::-webkit-scrollbar{
     display: none;
@@ -210,13 +211,90 @@ gap: 1vw;
 #page2-bottom{
     height: 80vh;
     width: 100%;
-    background-color: aqua;
-    padding: 3vw 4vw;
+    padding: 4.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 #page2-bottom h1{
-    font-size: 2.5vw;
+    font-size: 2vw;
     width: 50%;
+    line-height: 3vw;
+    position: relative;
+    z-index: 9;
 }
+#bottom-part2{
+    width: 20%;
+    
+}
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+#bottom-part2 p{
+    font-weight: 200;
+    margin: top 2vw; 
+    font-size: 1vw;
+}
+#page2 #gooey{
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    background:linear-gradient(to top right,#ff2d03,#ff5c0b) ;
+    border-radius: 50%;
+    top:  52%;
+    left: 22%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes gooey{
+    from{
+            transform: translate(10%,-10%) skew(0);
+    }
+        to{
+          transform: translate(-10%,10%) skew(-12deg);
+        }
+    }
+
+    
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 0;
+}
+.elem{
+    height: 150px;
+    width: 100%;
+   border-bottom: 1px solid #38383864 ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+.elem h2{
+    font-size: 2vw;
+    position: relative;
+    z-index: 9;
+}
+.overlay{
+height: 100%;
+width: 100%;
+background-color: orange;
+position: absolute;
+left: 0;
+top: -100%;
+transition: all ease 0.25s;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+ 
+
