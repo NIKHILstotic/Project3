@@ -297,4 +297,19 @@ transition: all ease 0.25s;
     top: 0;
 }
  
-
+#elem-container{
+    background-color: #FE320A;
+}
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    background-color: red;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
